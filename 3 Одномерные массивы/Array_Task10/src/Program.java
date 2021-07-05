@@ -14,7 +14,7 @@ public class Program {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое положительное число больше чем три.");
         int number = scanner.nextInt();
-        if (number <= 0 || number % 1 != 0 || number <= 3) {
+        if (number <= 3 || number % 1 != 0) {
             System.out.println("Вы ввели неподходящее число. Пожалуйста, попытайтесь снова.");
             return;
         }
