@@ -15,7 +15,7 @@ public class Program {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое положительное число больше единицы.");
         int number = scanner.nextInt();
-        if (number <= 1 || number % 1 != 0) {
+        if (number <= 1) {
             System.out.println("Вы ввели неподходящее число. Пожалуйста, попытайтесь снова.");
             return;
         }

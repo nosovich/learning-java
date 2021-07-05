@@ -14,7 +14,7 @@ public class Program {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое положительное число больше чем три.");
         int number = scanner.nextInt();
-        if (number <= 3 || number % 1 != 0) {
+        if (number <= 3) {
             System.out.println("Вы ввели неподходящее число. Пожалуйста, попытайтесь снова.");
             return;
         }
@@ -41,12 +41,13 @@ public class Program {
         }
         System.out.println("");
         System.out.println("Вариант 2 наполнения второго массива: ");
+        int[] array3 = new int[array1.length];
         for (int i = 0; i < array1.length; i++) {
             if (array1[i] % 2 == 0) {
-                array2[i] = array1[i];
+                array3[i] = array1[i];
             }
         }
-        for (int element : array2) {
+        for (int element : array3) {
             System.out.print(element + " ");
         }
     }
